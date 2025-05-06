@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Mood Careers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="style/6pages.css" rel="stylesheet" />
+  
+  <!-- Genty Sans Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Genty+Sans&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Keyframe for the moving gradient */
+    @keyframes movingGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body {
+      /* Apply the moving gradient */
+      background: linear-gradient(90deg, #fcd9d6, #dcd5f8);
+      background-size: 400% 400%; /* Large enough to show the smooth animation */
+      animation: movingGradient 20s ease infinite; /* Apply the moving effect */
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Genty Sans', sans-serif;
+    }
+
+    nav {
+      background-color: #800080; /* Purple Navbar */
+      width: 100%;
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between; /* Space the links out evenly */
+      align-items: center;
+      padding: 0.5rem 3rem; /* Reduced padding for a slimmer navbar */
+    }
+    .nav-inner a {
+      color: #ff1493; /* Hot Pink color for navbar links */
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .nav-inner a:hover {
+      color: #ff69b4; /* Lighter pink on hover */
+      transform: scale(1.1);
+    }
+    /* Extended Center Bar Style */
+    section {
+      background: rgba(255, 255, 255, 0.3); /* Transparent white background */
+      backdrop-filter: blur(10px); /* Slight blur for contrast */
+      border-radius: 1rem;
+      padding: 3rem 2rem; /* Larger padding for extended look */
+      width: 90%; /* Keep the width moderate */
+      max-width: 1000px; /* Limit max width */
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Larger shadow */
+      border: 2px solid #fffa9f9; /* Light border to make the edges visible */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: auto; /* Allow for dynamic height */
+      min-height: 350px; /* Minimum height to make it feel extended */
+    }
+    section:hover {
+      transform: scale(1.02);
+      box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Gradient text effect for CAREERS */
+    .gradient-text {
+      background: linear-gradient(90deg, #ff1493, #800080, #ff69b4, #ff1493);
+      background-size: 400% 400%;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      animation: movingGradient 5s ease infinite;
+      font-size: 4.5rem;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-align: center;
+      display: inline-block;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .gradient-text:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-inner">
+      <a href="aboutus.html">ABOUT US</a>
+      <a href="features.html">VOICE</a>
+      <div class="cursor-pointer hover:scale-110 transition" onclick="location.href='homepage.html';">
+        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg">
+          <img src="cat.png" alt="Cute cat" class="rounded-full w-8 h-8" />
+        </div>
+      </div>
+      <a href="contactus.html">MOOD</a>
+      <a href="meditate.html">MEDITATE</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex flex-col items-center justify-center min-h-screen px-6 py-16 animate-fadeIn w-full">
+    <img src="careers.png" alt="Careers" class="w-64 h-auto mb-8 rounded-2xl shadow-2xl border-4 border-white/60 image-hover" />
+
+    <section class="text-center">
+      <h2 class="gradient-text mb-4">
+        CAREERS
+      </h2>
+      <p class="text-lg sm:text-xl leading-relaxed text-gray-700 mb-8">
+        <span class="text-pink-800 font-semibold">At The Mood, it’s not just work —</span> it’s where passion finds purpose.
+        Every day is a chance to <span class="text-pink-700">create something meaningful</span>, push boundaries, and grow
+        with people who inspire you. We thrive on fresh ideas, solving real problems, and celebrating shared victories.
+        <br /><br />
+        🌸 We support, inspire, and grow — together.
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
