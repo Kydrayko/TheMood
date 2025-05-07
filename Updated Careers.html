@@ -7,29 +7,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="style/6pages.css" rel="stylesheet" />
-  
+
   <!-- Genty Sans Font -->
   <link href="https://fonts.googleapis.com/css2?family=Genty+Sans&display=swap" rel="stylesheet" />
-  
+
   <style>
-    /* Keyframe for the moving gradient */
     @keyframes movingGradient {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     body {
-      /* Apply the moving gradient */
       background: linear-gradient(90deg, #fcd9d6, #dcd5f8);
-      background-size: 400% 400%; /* Large enough to show the smooth animation */
-      animation: movingGradient 20s ease infinite; /* Apply the moving effect */
+      background-size: 400% 400%;
+      animation: movingGradient 20s ease infinite;
       min-height: 100vh;
       margin: 0;
       display: flex;
@@ -40,47 +32,50 @@
     }
 
     nav {
-      background-color: #800080; /* Purple Navbar */
+      background-color: #800080;
       width: 100%;
     }
+
     .nav-inner {
       display: flex;
-      justify-content: space-between; /* Space the links out evenly */
+      justify-content: space-between;
       align-items: center;
-      padding: 0.5rem 3rem; /* Reduced padding for a slimmer navbar */
+      padding: 0.5rem 3rem;
     }
+
     .nav-inner a {
-      color: #ff1493; /* Hot Pink color for navbar links */
+      color: #ff1493;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: color 0.3s ease, transform 0.3s ease;
     }
+
     .nav-inner a:hover {
-      color: #ff69b4; /* Lighter pink on hover */
+      color: #ff69b4;
       transform: scale(1.1);
     }
-    /* Extended Center Bar Style */
+
     section {
-      background: rgba(255, 255, 255, 0.3); /* Transparent white background */
-      backdrop-filter: blur(10px); /* Slight blur for contrast */
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
       border-radius: 1rem;
-      padding: 3rem 2rem; /* Larger padding for extended look */
-      width: 90%; /* Keep the width moderate */
-      max-width: 1000px; /* Limit max width */
-      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1); /* Larger shadow */
-      border: 2px solid #fffa9f9; /* Light border to make the edges visible */
+      padding: 3rem 2rem;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+      border: 2px solid #fffa9f9;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      height: auto; /* Allow for dynamic height */
-      min-height: 350px; /* Minimum height to make it feel extended */
+      height: auto;
+      min-height: 350px;
     }
+
     section:hover {
       transform: scale(1.02);
       box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.2);
     }
 
-    /* Gradient text effect for CAREERS */
     .gradient-text {
       background: linear-gradient(90deg, #ff1493, #800080, #ff69b4, #ff1493);
       background-size: 400% 400%;
@@ -96,6 +91,7 @@
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease;
     }
+
     .gradient-text:hover {
       transform: scale(1.1);
     }
@@ -119,9 +115,14 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="flex flex-col items-center justify-center min-h-screen px-6 py-16 animate-fadeIn w-full">
-    <img src="careers.png" alt="Careers" class="w-64 h-auto mb-8 rounded-2xl shadow-2xl border-4 border-white/60 image-hover" />
+  <main class="flex flex-col items-center justify-center min-h-screen px-6 py-16 w-full space-y-10">
+    <!-- Expanded Image -->
+    <div class="w-full flex justify-center px-4">
+      <img src="careers.png" alt="Careers"
+           class="w-full max-w-4xl h-auto rounded-3xl shadow-2xl border-4 border-white/60 transition-transform duration-300 hover:scale-105" />
+    </div>
 
+    <!-- Content Section -->
     <section class="text-center">
       <h2 class="gradient-text mb-4">
         CAREERS
@@ -133,6 +134,12 @@
         <br /><br />
         🌸 We support, inspire, and grow — together.
       </p>
+
+      <!-- Call to Action Button -->
+      <a href="apply.html"
+         class="inline-block mt-4 px-8 py-3 bg-pink-600 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-pink-700 transition duration-300">
+        Join Our Team
+      </a>
     </section>
   </main>
 
