@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" type="x=icon" href="cat.png">
+  <!-- Meta tags para sa character encoding at viewport settings para sa responsive design -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE MOOD</title>
+  
+  <!-- Pag-link ng external stylesheet para sa TailwindCSS at custom na estilo -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style/about.css" />
+  
+  <!-- FontAwesome para sa mga icon na ginagamit sa mga feature cards -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body class="text-gray-800 font-sans animated-gradient">
+  <!-- Container ng buong pahina, may padding at naka-flex para sa center alignment -->
+  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+    
+    <!-- Pamagat ng seksyon -->
+    <h1 class="text-6xl font-extrabold text-purple-700 mb-16 tracking-widest uppercase drop-shadow-lg animate-pulse">
+      FEATURES
+    </h1>
+
+    <!-- Grid layout para sa mga feature cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl w-full">
+      
+      <!-- Card 1: Chat Mode -->
+      <div class="group feature-card">
+        <a href="chatmode.html" class="flex justify-center">
+          <img src="chatmodefeaturespage.png" alt="Chat Mode" class="card-img" />
+        </a>
+        <div class="card-title">
+          <i class="fas fa-star text-yellow-400 mr-2"></i>CHAT MODE
+        </div>
+      </div>
+
+      <!-- Card 2: Mood Tracking -->
+      <div class="group feature-card">
+        <a href="moodtracking.html" class="flex justify-center">
+          <img src="moodtrackingfeaturespage.png" alt="Mood Tracking" class="card-img" />
+        </a>
+        <div class="card-title">
+          <i class="fas fa-star text-yellow-400 mr-2"></i>MOOD TRACKING
+        </div>
+      </div>
+
+      <!-- Card 3: Meditation Mode -->
+      <div class="group feature-card">
+        <a href="meditationmode.html" class="flex justify-center">
+          <img src="meditationfeaturespage.png" alt="Meditation Mode" class="card-img" />
+        </a>
+        <div class="card-title">
+          <i class="fas fa-star text-yellow-400 mr-2"></i>MEDITATION MODE
+        </div>
+      </div>
+
+      <!-- Card 4: Play -->
+      <div class="group feature-card">
+        <a href="play.html" class="flex justify-center">
+          <img src="PlayFeature4.png" alt="Play" class="card-img" />
+        </a>
+        <div class="card-title">
+          <i class="fas fa-star text-yellow-400 mr-2"></i>PLAY
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

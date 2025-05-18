@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" type="x=icon" href="cat.png">
+  <meta charset="utf-8"/>
+  <!-- Nagse-set ng character encoding sa UTF-8 para sa tamang pagpapakita ng mga teksto -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Tinutulungan ang page na maging responsive, ina-adjust ang layout ayon sa laki ng screen -->
+  <title>THE MOOD</title>
+  <!-- Title ng page -->
+  
+  <!-- Tailwind CSS (CDN) para sa utility-first CSS framework -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- External CSS file para sa mga custom na style -->
+  <link rel="stylesheet" href="style/team.css"/>
+</head>
+<body class="font-roboto bg-gradient-to-br from-[#d9f7f1] via-[#f7d9f7] to-[#c3c9f7] min-h-screen flex flex-col">
+
+ <nav class="font-poppins">
+         <div class="nav-inner">
+          <a href="aboutus.html" class="glow-on-hover">ABOUT US</a>
+           <a href="features.html" class="glow-on-hover">FEATURES</a>
+             <div class="cursor-pointer hover:scale-110 transition" onclick="location.href='homepage.html';">
+               <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg">
+             <img src="cat.png" alt="Cute cat" class="rounded-full w-8 h-8" />
+           </div>
+          </div>
+          <a href="team.html" class="glow-on-hover">TEAM</a>
+        <a href="contactus.html" class="glow-on-hover">CONTACT US</a>
+      </div>
+      </nav>
+
+  <!-- Team Section -->
+  <section class="flex-grow max-w-5xl mx-auto w-full px-4 py-20">
+    <!-- Section containing team member profiles -->
+    <div class="bg-gradient-to-br from-[#f7d9f7] via-[#f7e9f7] to-[#c3c9f7] rounded-xl p-10 md:p-16 min-h-[80vh]">
+      <h2 class="text-center text-[#d9a1e8] font-extrabold text-xl md:text-2xl tracking-widest mb-10 font-archivo-black">MEET OUR TEAM</h2>
+      <!-- Team Section Title -->
+      
+      <div class="flex flex-wrap justify-center gap-16">
+        <!-- Flexbox container to display the team members -->
+
+        <!-- Team Member Template -->
+        <div class="team-member flex flex-col items-center text-center font-poppins gap-6 w-72 bg-white p-6 rounded-xl shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="rounded-full w-32 h-32 object-cover border-8 border-[#f7d9f7]" src="hanss.png" alt="CEO"/>
+            <!-- CEO Image -->
+          </div>
+          <h3 class="text-[#b87ccf] font-poppins-bold text-sm tracking-widest mb-2">CEO / CTO</h3>
+          <p class="font-extrabold text-xs leading-tight mb-2">Hans Michael Borsigue</p>
+          <!-- CEO Name -->
+          <ul class="text-xs text-black list-disc list-inside max-w-none">
+            <!-- List of CEO Responsibilities -->
+            <li>Integrates AI like OpenAI for personalized, empathetic user experiences.</li>
+            <li>Guides The Mood’s tech vision to align with its mission.</li>
+            <li>Works with external partners (APIs, cloud platforms) to enhance the app.</li>
+            <li>Drives key decisions on app security, scalability, and performance.</li>
+            <li>Builds a tech culture focused on integrity and mental wellness.</li>
+          </ul>
+        </div>
+
+        <!-- COO Team Member -->
+        <div class="team-member flex flex-col items-center text-center font-poppins gap-6 w-72 bg-white p-6 rounded-xl shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="rounded-full w-32 h-32 object-cover border-8 border-[#f7d9f7]" src="bianca.png" alt="COO"/>
+          </div>
+          <h3 class="text-[#b87ccf] font-poppins-bold text-sm tracking-widest mb-2">COO</h3>
+          <p class="font-extrabold text-xs leading-tight mb-2">Bianca Carpio</p>
+          <ul class="text-xs text-black list-disc list-inside max-w-none">
+            <!-- List of COO Responsibilities -->
+            <li>Manages enterprise services like dashboards, billing, and client support.</li>
+            <li>Handles legal compliance like DTI registration, tax permits, and data privacy.</li>
+            <li>Keeps communication flowing between teams and partners.</li>
+            <li>Oversees daily operations to ensure smooth and efficient workflows.</li>
+            <li>Supports growth by tailoring services to schools and businesses.</li>
+          </ul>
+        </div>
+
+        <!-- CMO Team Member -->
+        <div class="team-member flex flex-col items-center text-center font-poppins gap-6 w-72 bg-white p-6 rounded-xl shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="rounded-full w-32 h-32 object-cover border-8 border-[#f7d9f7]" src="kyle (2).png" alt="CMO"/>
+          </div>
+          <h3 class="text-[#b87ccf] font-poppins-bold text-sm tracking-widest mb-2">CMO</h3>
+          <p class="font-extrabold text-xs leading-tight mb-2">Kyle Vincent Ruelos</p>
+          <ul class="text-xs text-black list-disc list-inside max-w-none">
+            <!-- List of CMO Responsibilities -->
+            <li>Leads emotional brand campaigns across social media platforms.</li>
+            <li>Runs referral programs and ambassador campaigns.</li>
+            <li>Leads influencer and PR efforts with wellness creators.</li>
+            <li>Develops onboarding campaigns with enterprise partners.</li>
+            <li>Improves app visibility through marketing data analysis.</li>
+          </ul>
+        </div>
+
+        <!-- UX/UI Designer Team Member -->
+        <div class="team-member flex flex-col items-center text-center font-poppins gap-6 w-72 bg-white p-6 rounded-xl shadow-lg">
+          <div class="flex-shrink-0">
+            <img class="rounded-full w-32 h-32 object-cover border-8 border-[#f7d9f7]" src="mary.png" alt="UX Designer"/>
+          </div>
+          <h3 class="text-[#b87ccf] font-poppins-bold text-sm tracking-widest mb-2">UX/UI DESIGNER</h3>
+          <p class="font-extrabold text-xs leading-tight mb-2">Mary Jane Go</p>
+          <ul class="text-xs text-black list-disc list-inside max-w-none">
+            <!-- List of UX/UI Designer Responsibilities -->
+            <li>Designs visuals for promotions and branding assets.</li>
+            <li>Supports all user types with responsive layouts.</li>
+            <li>Collaborates on mood tracking, AI, and meditation features.</li>
+            <li>Shapes the visual identity using soft pastels and mascots.</li>
+            <li>Refines user journeys for seamless feature navigation.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+   <script>
+      const nav = document.querySelector('nav');
+      let opacity = 1;
+      let direction = -0.01;
+
+      function animateOpacity() {
+        opacity += direction;
+
+        if (opacity <= 0.5) {
+          opacity = 0.5;
+          direction = 0.01;
+        } else if (opacity >= 1) {
+          opacity = 1;
+          direction = -0.01;
+        }
+
+        nav.style.backgroundColor = `rgba(128, 0, 128, ${opacity.toFixed(2)})`;
+
+        requestAnimationFrame(animateOpacity);
+      }
+
+      animateOpacity();
+    </script>
+</body>
+</html>

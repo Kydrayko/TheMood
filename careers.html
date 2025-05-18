@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="shortcut icon" type="x=icon" href="cat.png">
+  <!-- Meta tags para sa tamang character encoding at view settings para sa responsive design -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE MOOD</title>
+  
+  <!-- Pag-link ng external stylesheet para sa TailwindCSS at custom na estilo -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="style/6pages.css" rel="stylesheet" />
+</head>
+
+<body class="font-poppins"> <!-- Ginamit ang Poppins na font sa buong katawan ng dokumento -->
+
+  <nav class="font-poppins">
+         <div class="nav-inner">
+          <a href="aboutus.html" class="glow-on-hover">ABOUT US</a>
+           <a href="features.html" class="glow-on-hover">FEATURES</a>
+             <div class="cursor-pointer hover:scale-110 transition" onclick="location.href='homepage.html';">
+               <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg">
+             <img src="cat.png" alt="Cute cat" class="rounded-full w-8 h-8" />
+           </div>
+          </div>
+          <a href="team.html" class="glow-on-hover">TEAM</a>
+        <a href="contactus.html" class="glow-on-hover">CONTACT US</a>
+      </div>
+      </nav>
+
+  <!-- Pangunahing Nilalaman ng Pahina -->
+  <main>
+    <!-- Ipinapakita ang larawan ng careers page (Responsive na disenyo para magkasya ang larawan) -->
+    <div class="w-full flex justify-center px-4 mb-10">
+      <img src="careers6pages.png" alt="Careers"
+           class="w-full max-w-4xl h-auto rounded-3xl shadow-2xl border-4 border-white/60 transition-transform duration-300 hover:scale-105" />
+    </div>
+
+    <!-- Seksyon ng teksto tungkol sa careers sa The Mood -->
+    <section class="text-center">
+      <!-- Pamagat ng Seksyon: "CAREERS" -->
+      <h2 class="font-archivo-black gradient-text mb-4">CAREERS</h2> <!-- Ginamit ang Archivo Black para sa pamagat -->
+      
+      <!-- Paglalarawan ng mga oportunidad sa trabaho at kultura ng kumpanya -->
+      <p class="font-poppins text-lg sm:text-xl leading-relaxed text-gray-700 mb-8">
+        <span class="text-pink-800 font-semibold"> At The Mood, it’s not just work— </span> it’s where passion finds purpose. Every day is a chance to create something meaningful, push boundaries, and grow alongside people who inspire you.
+        <span class="text-pink-700"> We thrive on the exchange of ideas, </span> the rush of solving complex problems, and the shared victories that make the journey worthwhile. We support, inspire, and help each other push forward. 
+         <br /><br /> 
+        🌸 We support, inspire, and grow — together.
+      </p>
+    </section>
+  </main>
+  <script>
+      const nav = document.querySelector('nav');
+      let opacity = 1;
+      let direction = -0.01;
+
+      function animateOpacity() {
+        opacity += direction;
+
+        if (opacity <= 0.5) {
+          opacity = 0.5;
+          direction = 0.01;
+        } else if (opacity >= 1) {
+          opacity = 1;
+          direction = -0.01;
+        }
+
+        nav.style.backgroundColor = `rgba(128, 0, 128, ${opacity.toFixed(2)})`;
+
+        requestAnimationFrame(animateOpacity);
+      }
+
+      animateOpacity();
+    </script>
+</body>
+</html>
