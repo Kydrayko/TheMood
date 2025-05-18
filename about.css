@@ -1,0 +1,63 @@
+/* Font-face declaration for Dancing Script font */
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('DancingScript-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Applying the Dancing Script font to h1 */
+h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Styling para sa animated gradient background */
+.animated-gradient {
+  background-image: url('images/gif2.gif');
+  background-size: cover;
+  background-position: center;
+  animation: none;
+}
+
+/* Feature card styling */
+.feature-card {
+  background-color: #cb6ce6;
+  color: white;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Hover effect para sa feature card */
+.feature-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(128, 90, 213, 0.3);
+  border-color: #a78bfa;
+  outline: 4px solid #c4b5fd;
+}
+
+/* Card image styling */
+.card-img {
+  border-radius: 12px;
+  width: 240px;
+  height: 192px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+/* Hover effect para sa card image */
+.group:hover .card-img {
+  transform: scale(1.05);
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.8px;
+}

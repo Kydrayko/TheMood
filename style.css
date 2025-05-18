@@ -1,0 +1,83 @@
+/* Body Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-image: url('images/gif.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #800080;
+  width: 100%;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 48px;
+}
+
+.nav-inner a {
+  color: #ff1493;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect with glow and scale */
+.nav-inner a:hover {
+  color: #ff69b4;
+  transform: scale(1.1);
+  text-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 15px #ff69b4,
+    0 0 20px #ff69b4;
+}
+
+/* Main Content Layout for Mood Section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* Main Title "THE MOOD" Styling */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff9dd8;
+  font-family: 'Genty Sans Regular';
+  line-height: 1.2;
+}
+
+/* Paragraph Styling */
+p {
+  margin-top: 16px;
+  font-size: 18px;
+  color: black;
+  font-family: 'Noto Serif Ethiopic', serif;
+  line-height: 1.5;
+}
+
+/* Button Styling */
+button {
+  margin-top: 32px;
+  background-color: #fea0c3;
+  color: white;
+  font-size: 18px;
+  font-weight: 500; /* 'medium' not valid, use 500 */
+  border-radius: 9999px;
+  padding: 16px 32px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffbad4;
+}

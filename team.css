@@ -1,0 +1,89 @@
+/* Font-face declarations for custom fonts */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Archivo Black';
+  src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+/* Applying fonts globally to body and specific classes */
+body, .font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-archivo-black {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+/* Navbar Styling */
+nav {
+  background-color: #800080;
+  width: 100%;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 48px;
+}
+
+.nav-inner a {
+  color: #ff1493;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effect with glow and scale */
+.nav-inner a:hover {
+  color: #ff69b4;
+  transform: scale(1.1);
+  text-shadow:
+    0 0 5px #ff69b4,
+    0 0 10px #ff69b4,
+    0 0 15px #ff69b4,
+    0 0 20px #ff69b4;
+}
+
+/* Responsive styling for team layout on mobile */
+@media (max-width: 768px) {
+  .team-member {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .team-member ul {
+    margin: 0 auto;
+  }
+}
+
+/* Team Member Box Styling */
+.team-member {
+  background-image: url('images/gif2.gif');
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
